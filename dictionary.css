@@ -1,5 +1,33 @@
+.EntryParagraph:before {
+  content: counter(ep)
+  color:white;
+  background-color:#333;
+  border-radius: 5px;
+  margin-right:1em;
+}
+
 .EntryParagraph {
   background:#ececec;
   border: 2px solid  #cecece;
   margin: 1em;
+}
+
+.LetterParagraph1 { 
+  background-color:pink;
+}
+
+.lexeme {
+  background: yellow;
+}
+
+.Letterv{
+  font-size: 50px;
+}
+
+.WordSection1 {
+  border: 5px dotted red;
+}
+
+.WordSection2 {
+  border: 5px dotted blue;
 }
