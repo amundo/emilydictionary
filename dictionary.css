@@ -31,3 +31,15 @@
 .WordSection2 {
   border: 5px dotted blue;
 }
+
+.IndentedParagraph {
+  background:lightblue;
+}
+
+.BlockParagraph {
+  background:lightyellow;
+}
+
+.Table {
+  background:lightgreen;
+}
