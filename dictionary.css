@@ -1,22 +1,18 @@
-.EntryParagraph:before {
-  content: counter(ep)
-  color:white;
-  background-color:#333;
-  border-radius: 5px;
-  margin-right:1em;
+* {
+  font-family: "Gentium Plus";
 }
 
 .EntryParagraph {
   background:#ececec;
   border: 2px solid  #cecece;
-  margin: 1em;
+  margin: 1em 0;
 }
 
 .LetterParagraph1 { 
   background-color:pink;
 }
 
-.lexeme {
+.Lexeme {
   background: yellow;
 }
 
@@ -26,6 +22,7 @@
 
 .WordSection1 {
   border: 5px dotted red;
+  padding: 1em;
 }
 
 .WordSection2 {
@@ -43,3 +40,128 @@
 .Table {
   background:lightgreen;
 }
+
+.Sensenumber {
+  background:black;
+  color:white;
+  font-weight:bold;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  text-align:center;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.LexemeQualifier {
+  background:red;
+}
+
+.fstandard {
+  border: 2px solid yellow;
+}
+
+.flabel {
+  border: 2px solid green;
+}
+
+.Examplefreetransn {
+  background:red;
+  color:white;
+}
+
+
+.Examplev {
+  background:red;
+  color:white;
+}
+
+.Glossn {
+}
+
+
+.Homonymnumber {
+}
+
+
+.IndentedParagraph {
+}
+
+
+.LetterParagraph1 {
+}
+
+
+.Letterv {
+}
+
+
+Lexeme {
+}
+
+
+LexemeQualifier {
+}
+
+
+Lexicalfunction {
+}
+
+
+Lexicalvernacular {
+}
+
+
+Notesanthropology {
+}
+
+
+Notesgrammar {
+}
+
+
+Partofspeech {
+}
+
+
+Sensenumber {
+}
+
+
+Subentry {
+}
+
+
+Table {
+}
+
+
+Traducciondlexema {
+}
+
+
+WordSection1 {
+}
+
+
+fbold {
+}
+
+
+fitalic {
+}
+
+
+flabel {
+}
+
+
+fstandard {
+}
+
+
+fvernacular {
+}
+
+

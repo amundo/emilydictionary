@@ -3,7 +3,7 @@ from __future__ import print_function
 from lxml import html
 import lxml.html.builder as E
 
-doc = html.parse('dictionary-11-08-2016.html')
+doc = html.parse('dictionary.html')
 body = doc.xpath('/html/*')[1]
 
 with open('crappy_version.txt', 'w') as f:
