@@ -26,11 +26,22 @@ let
   before = document.querySelector('#before'),
   after = document.querySelector('#after');
 
-let smushRight = selector => {
-  
+let nextSiblingsWithClass = (target, className) => {
+   var siblings = [], n = target;
+   while(n = n.nextElementSibling && n.classList.contains(className)){
+     siblings.push(n);
+   }
+   return siblings;
 }
 
-let fixed = () => before.children.length === after.children.length;
+let smushRight = className => {
+  let toSmush = nextSiblingsWithClass(document.querySelector(className));
+}
+
+let fixed = () => {
+  smushRight('#before .Lexeme');
+  before.children.length === after.children.length;
+}
 
 console.log(fixed())
 </script>
