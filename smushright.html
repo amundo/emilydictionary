@@ -8,22 +8,26 @@
   
   <h1>smush right</h1>
 
-<div class="before">
+<div id="before">
 <span class=Lexeme>tu</span><span class=Lexeme>_</span><span class=Lexeme>un</span>
 </div>
 
-<div class="after">
+<div id="after">
 <span class=Lexeme>Tu̠ꞌun</span>
 </div>
 
 <script>
 let 
-  before = document.querySelector('.before'),
-  after = document.querySelector('.before');
+  before = document.querySelector('#before'),
+  after = document.querySelector('#after');
 
 let smushRight = selector => {
   
 }
+
+let fixed = () => before.children.length === after.children.length;
+
+console.log(fixed())
 </script>
 
 
