@@ -7,6 +7,7 @@
 * {
   font-family: 'Gentium Plus';
 }
+span.Lexeme { border: 1px solid pink; }
 </style>
 </head>
 <body>
@@ -14,11 +15,11 @@
   <h1>smush right</h1>
 
 <div id="before">
-<span class=Lexeme>Tu</span><span class=Lexeme>̱</span><span class=Lexeme>ꞌ</span><span class=Lexeme>un</span>
+<span class=Lexeme>Tu</span><span class=Lexeme>̱</span><span class=Lexeme>ꞌ</span><span class=Lexeme>un</span> <span class=ignoreMe>ignore this</span>
 </div>
 
 <div id="after">
-<span class=Lexeme>Tu̠ꞌun</span>
+<span class=Lexeme>Tu̠ꞌun</span> <span class=ignoreMe>ignore this</span>
 </div>
 
 <script>
@@ -27,19 +28,30 @@ let
   after = document.querySelector('#after');
 
 let nextSiblingsWithClass = (target, className) => {
-   var siblings = [], n = target;
-   while(n = n.nextElementSibling && n.classList.contains(className)){
-     siblings.push(n);
+   var siblings = [target], n = target;
+   while(n = n.nextElementSibling){
+     if(n.classList.contains(className)){
+       siblings.push(n)
+     } else { 
+       break
+     }
    }
    return siblings;
 }
 
-let smushRight = className => {
-  let toSmush = nextSiblingsWithClass(document.querySelector(className));
+let smushRight = nodes => {
+  let first = nodes.shift();
+  nodes
+    .forEach(node => {
+      first.textContent += node.textContent;
+      node.remove()
+    })
 }
 
 let fixed = () => {
-  smushRight('#before .Lexeme');
+  let first = document.querySelector('.Lexeme');
+  let family = nextSiblingsWithClass(first, 'Lexeme');
+  smushRight(family);
   before.children.length === after.children.length;
 }
 
