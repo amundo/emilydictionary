@@ -10,3 +10,10 @@ elementsWithNoAttributes.forEach(el => el.outerHTML = el.innerHTML)
 
 // merge sibling Lexeme (spans)
 document.body.querySelectorAll('.Lexeme + .Lexeme').forEach(s => { s.previousElementSibling.textContent += s.textContent; s.remove() })
+
+// fix all-alone apostrophes
+Array.from(document.body.querySelectorAll('.Lexeme'))
+  .filter(el => el.textContent == `ꞌ`)
+  .forEach(apostrophe => apostrophe.outerHTML = apostrophe.textContent)
+
+
