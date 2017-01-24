@@ -14,6 +14,7 @@
 
 .Lexeme {
   background: yellow;
+  border: 2px dashed green;
 }
 
 .Letterv{
@@ -73,7 +74,7 @@
 
 
 .Examplev {
-  background:red;
+  background:indigo;
   color:white;
 }
 
@@ -121,7 +122,9 @@ Notesgrammar {
 }
 
 
-Partofspeech {
+.Partofspeech {
+  background-color: white;
+  color:blue;
 }
 
 
@@ -163,5 +166,7 @@ fstandard {
 
 fvernacular {
 }
+
+
 
 
