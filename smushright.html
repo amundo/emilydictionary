@@ -16,7 +16,6 @@ span.Lexeme { border: 1px solid pink; }
 
 <div id="before">
 <span class=Lexeme>Tu</span><span class=Lexeme>̱</span><span class=Lexeme>ꞌ</span><span class=Lexeme>un</span> <span class=ignoreMe>ignore this</span>
-<span class=Lexeme>Tu</span><span class=Lexeme>̱</span><span class=Lexeme>ꞌ</span><span class=Lexeme>un</span> <span class=ignoreMe>ignore this</span>
 </div>
 
 <div id="after">
@@ -28,32 +27,19 @@ let
   before = document.querySelector('#before'),
   after = document.querySelector('#after');
 
-let nextSiblingsWithClass = (target, className) => {
-   var siblings = [target], n = target;
-   while(n = n.nextElementSibling){
-     if(n.classList.contains(className)){
-       siblings.push(n)
-     } else { 
-       break
-     }
-   }
-   return siblings;
-}
-
-let smushRight = nodes => {
-  let first = nodes.shift();
-  nodes
-    .forEach(node => {
-      first.textContent += node.textContent;
-      node.remove()
+let smushRight = className => {
+  let selector = `${className} + ${className}`;
+  document.body.querySelectorAll(selector)
+    .forEach(s => { 
+      s.previousElementSibling.textContent += s.textContent; 
+      s.remove() 
     })
 }
 
 let fixed = () => {
   let first = document.querySelector('.Lexeme');
-  let family = nextSiblingsWithClass(first, 'Lexeme');
-  smushRight(family);
-  before.children.length === after.children.length;
+  smushRight('.Lexeme');
+  return before.children.length === after.children.length;
 }
 
 console.log(fixed())
