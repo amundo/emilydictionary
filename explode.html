@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>explode</title>
+<style>
+div { color:green }
+span { color:red }
+</style>
+
+</head>
+<body>
+
+<h1>explode</h1>
+  
+<div><span>should be green</span></div>
+
+<script>
+let span = document.querySelector('span');
+span.outerHTML = span.innerHTML;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>get that text node</title>
+<style>
+div { color:green }
+span { color:red }
+</style>
+
+</head>
+<body>
+
+<h1>get that text node</h1>
+  
+<div><span class=Examplev>what</span>'<span class=Examplev>s</span> the problem</div>
+
+<script>
+let 
+  div = document.querySelector('div'),
+  span = document.querySelector('span');
+
+window.x = span.nextSibling.textContent;
+</script>
+
+</body>
+</html>

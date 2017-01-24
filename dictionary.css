@@ -60,7 +60,7 @@
 }
 
 .fstandard {
-  border: 2px solid yellow;
+  font-style: italic !important;
 }
 
 .flabel {
@@ -79,6 +79,7 @@
 }
 
 .Glossn {
+  background-color: orange;
 }
 
 
@@ -98,27 +99,27 @@
 }
 
 
-Lexeme {
+.Lexeme {
 }
 
 
-LexemeQualifier {
+.LexemeQualifier {
 }
 
 
-Lexicalfunction {
+.Lexicalfunction {
 }
 
 
-Lexicalvernacular {
+.Lexicalvernacular {
 }
 
 
-Notesanthropology {
+.Notesanthropology {
 }
 
 
-Notesgrammar {
+.Notesgrammar {
 }
 
 
@@ -128,44 +129,46 @@ Notesgrammar {
 }
 
 
-Sensenumber {
+.Sensenumber {
 }
 
 
-Subentry {
+.Subentry {
+  background: lightyellow;
+  border: 2px dashed lightgreen;
+}
+
+.Table {
 }
 
 
-Table {
+.Traducciondlexema {
 }
 
 
-Traducciondlexema {
+.WordSection1 {
+}
+
+.fbold {
 }
 
 
-WordSection1 {
+.fitalic {
 }
 
 
-fbold {
+.flabel {
 }
 
 
-fitalic {
+.fstandard {
 }
 
 
-flabel {
+.fvernacular {
 }
 
 
-fstandard {
-}
-
-
-fvernacular {
-}
 
 
 

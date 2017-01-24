@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  
+<div>
+<p>a</p>
+
+<p>a</p>
+
+<p>a</p>
+</div>
+
+<script>
+// select element to unwrap
+var el = document.querySelector('div');
+
+// get the element's parent node
+var parent = el.parentNode;
+
+// move all children out of the element
+while (el.firstChild) parent.insertBefore(el.firstChild, el);
+
+// remove the empty element
+parent.removeChild(el);
+</script>
+
+</body>
+</html>
