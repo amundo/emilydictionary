@@ -1,7 +1,7 @@
 // no inline styles please
 // no lang tags , they aren’t terribly useful
 let removeStyleAndLangAttributes = () =>  {
-  document.body.querySelectorAll('*').forEach(el => {
+  document.querySelectorAll('*').forEach(el => {
     el.removeAttribute('style');
     el.removeAttribute('lang');
   })
@@ -28,7 +28,9 @@ let mergeApostrophesLeft = () => {
   Array.from(document.querySelectorAll('*'))
     .filter(el => el.textContent.trim() == "'")
     .forEach(el => {
-      el.previousElementSibling.innerHTML += el.textContent;
+      if(el.previousElementSibling){
+         el.previousElementSibling.innerHTML += el.textContent;
+      }
       el.remove();
     })
 }
@@ -40,9 +42,11 @@ Array.from(document.body.querySelectorAll('*'))
     .filter(el => el.textContent.trim() == `ꞌ`)
     .forEach(apostrophe => apostrophe.outerHTML = apostrophe.textContent)
 
+console.log(document.querySelectorAll('*').length);
 mergeApostrophesLeft();
 removeStyleAndLangAttributes();
 unwrapAttributelessTags();
+console.log(document.querySelectorAll('*').length);
 
 classesToMerge
   .map(className => Array.from(document.querySelectorAll(className)))
@@ -60,3 +64,6 @@ classesToMerge
 
 classesToMerge.forEach(mergeLeft);
 
+
+document.querySelectorAll('.Table')
+  .forEach(table => table.previousElementSibling.appendChild(table))

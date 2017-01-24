@@ -3,9 +3,13 @@
 }
 
 .EntryParagraph {
-  background:#ececec;
   border: 2px solid  #cecece;
   margin: 1em 0;
+
+  background:#f7f5c6;
+  border-top-right-radius:20px;
+  width: 50%;
+  padding: 2em;
 }
 
 .LetterParagraph1 { 
