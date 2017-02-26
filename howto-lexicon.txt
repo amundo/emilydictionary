@@ -1,0 +1,13 @@
+the way i exported the simple {token,gloss} lexicon file from dicitonary.html
+is
+
+```js
+let lexicon = $$('.EntryParagraph')
+  .filter(ep => ep.querySelector(".Lexeme") && ep.querySelector(".Glossn"))
+  .map(ep => ({
+    token: ep.querySelector('.Lexeme').textContent.trim(), 
+    gloss: ep.querySelector('.Glossn').textContent.trim()
+  }))
+
+copy(lexicon)
+```
