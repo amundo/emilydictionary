@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+<style>
+span.merge {
+  background:tan;
+  border: 1px solid black;
+}
+
+.dontmerge {
+  background:tan;
+  border: 1px solid green;
+}
+</style>
+</head>
+<body>
+  
+<div class="dontmerge">heading</div>
+<span class="merge">blah</span>
+<span class="merge">blah</span>
+<span class="merge">blah</span>
+<div class="dontmerge">heading</div>
+<span class="merge">blah</span>
+<span class="merge">blah</span>
+<span class="merge">blah</span>
+<span class="merge">blah</span>
+<div class="dontmerge">heading</div>
+
+<script>
+
+
+let mergeRight = selector => {
+  let wrappers = Array.from(document.querySelectorAll(selector));
+  wrappers.forEach(wrapper => {
+    while(wrapper.nextElementSibling && !wrapper.nextElementSibling.classList.contains(selector) ){
+      wrapper.appendChild(wrapper.nextElementSibling);
+    }
+  })
+}
+
+mergeRight('.EntryParagraph')
+
+</script>
+</body>
+</html>

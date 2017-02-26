@@ -8,7 +8,8 @@ body = doc.xpath('/html/*')[1]
 
 with open('crappy_version.txt', 'w') as f:
     for item in body.cssselect('div > p.EntryParagraph'):
-        stuff = {cls: (item.cssselect('span.{}'.format(cls)) or [E.SPAN("XXX")])[0].text_content() for cls in ("Lexeme", "Glossn", "Definitionn")}
+        stuff = {cls: (item.cssselect('span.{}'.format(cls)) or [E.SPAN("XXX")])[0].text_content() for cls in ("Lexeme", "Glossn")}
         for k, v in stuff.iteritems():
-            print("{}: {}".format(k, v.replace('\n', '')), file=f)
+            print("{}: {}".format(k, v.replace('\n', '').encode('utf-8')), file=f)
+        print("\n", file=f)
 print('\n', file=f)

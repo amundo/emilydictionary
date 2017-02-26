@@ -1,0 +1,99 @@
+
+
+i̠ꞌi̠ (P)  pron, adj   Forma independiente de primera persona de singular.  Véase ye̠ꞌe̠
+
+{
+  "headword": "i̠ꞌi̠",
+  "gloss": null,      // note that this entry has no gloss!
+  "variants": "P",    // P stands for a town, should have the expansion here
+  "wordClass": [
+    "pronoun",
+    "adjective"       // does it make sense to have more than one wordClass per headword?
+                      // maybe better at the Sense level?
+  ], 
+
+  "senses": [
+    {
+       "headword": "i̠ꞌi̠",
+       "definition": "Forma independiente de primera persona de singular.",
+       "references": [
+          {
+            "see": "ye̠ꞌe̠"
+          }
+       ]
+    }    
+  ]
+}
+
+
+ìꞌì  s  flor de ejote  Kuun ní ndìchì kui̠ya̠ vitin chi íyo ní ìꞌì ndìchì nde̠. Este año va a haber muchos ejotes porque las plantas tienen muchas flores. 
+
+{
+  "headword": "ìꞌì",
+  "gloss": "flor de ejote",       // is this a definition or a gloss?
+  "wordClass": [
+    "noun"      // s = sustantivo, probably better to be imperialist and insist on English
+  ], 
+
+  "senses": [
+    {
+       "headword": "i̠ꞌi̠",
+       "definition": "flor de ejote",
+       "examples": [
+          {
+            "transcription": "Kuun ní ndìchì kui̠ya̠ vitin chi íyo ní ìꞌì ndìchì nde̠.", 
+            "translation": "Este año va a haber muchos ejotes porque las plantas tienen muchas flores."
+          }
+       ],
+       "references": [
+       ]
+    }    
+  ]
+}
+
+i̠ín  s  sal   Loꞌo i̠ín chika̠a̠ ún xíꞌín ñaꞌa tá sikuáꞌa ún ya̠ chi uꞌva ní ndàkú ún.  Échale solamente un poco de sal a la comida cuando la haces; pues tu pozole está muy salado.  Variante ñi̠í
+
+headword: i̠ín  
+wordClass: s  
+gloss: sal   
+
+examples: 
+  Loꞌo i̠ín chika̠a̠ ún xíꞌín ñaꞌa tá sikuáꞌa ún ya̠ chi uꞌva ní ndàkú ún.  
+  Échale solamente un poco de sal a la comida cuando la haces; pues tu pozole está muy salado.  
+
+references:
+  Variante ñi̠í
+
+The next two are homonyms: ikán ‘allá’ and ikán ‘hacer’. 
+
+1
+ikán  
+1. 
+adv   
+allá (fuera de la vista)  
+‑¿Míí koo ún kui̠ya̠ ya̠ va̠xi? ‑Ti̠ndàꞌì koo i̠ ta ikán chiꞌi i̠. 
+‑¿Dónde vas a vivir el año que viene? ‑Voy a vivir en Tlapa, y allá voy a sembrar.
+
+2. 
+adj  
+aquel (fuera de la vista)  
+Na̠veꞌe i̠ ta kǒó kútóo na̠ ra̠ta̠a ikán chí kǒó kama ra̠. 
+Los de mi casa no quieren a aquel hombre porque no es listo.
+
+M: ikán; 
+A: kán; 
+EJ: ikán
+
+2
+ikán  
+vt  
+hacer  
+
+Tiempo kùù mií ra̠Carlos chiñu, ta kua̠ꞌá ní ya̠ ìkán ra̠. 
+Carlos hizo muchas cosas cuando ocupó el puesto.  
+
+X: ikán, íkán, ìkán ~ ndi̠kán
+M: no existe
+P: no existe
+
+
